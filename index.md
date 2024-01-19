@@ -14,17 +14,23 @@ header:
 related: true
 ---
 
-My name is Alban Sagouis and this is my personal professional website. My CV is here but I also plan to use the collection feature of this website to build a dynamic CV: I'll share blog posts about experiences I had that will be gathered together automatically.
+My name is Alban Sagouis and this is my personal professional website.
+
+There is a dynamic CV that aggregates my blog posts described as professional _experiences_ and also blog posts about photography or other topics.
+
+<!-- {% include module_left.html image_path="assets/images/portrait_with_scarf.jpeg" width="280px" title="Title" description="longer text" %} -->
 
 ### Current job
+
 I currently work at iDiv, the German Biodiversity Synthesis Center, as a Scientific programmer. In [Jon Chase's group][chaselab]:
+
 1. I extract, aggregate, restructure, check and standardise data from the literature
 2. I assist colleagues with R problems
 3. I implement and encourage scientific software reproducibility practices, notably containerisation and automatic testing
-4. I frequently talk about how indespensible is the [`renv`][renv] package
+4. I frequently talk about how indispensable is the [`renv`][renv] package
 5. I use all of the above to build and grow research compendia extracting, restructuring, standardising and checking data in a documented and reproducible environment, publishing and archiving code and data.
 6. I write monthly newsletters to my colleagues which you can find [here][link_to_tech_news]
-7. I occasionaly build a package of functions used for a specific project such as the [`sRealmTools`][gh_srealmtools] package or [`BioTIMEr`][gh_biotimer]
+7. I occasionally build a package of functions used for a specific project such as the [`sRealmTools`][gh_srealmtools] package or [`BioTIMEr`][gh_biotimer]
 8. I co-maintain [`mobsim`][gh_mobsim], a community simulation R package that we use for work, for [teaching][gh_biodiv_patterns] and publish on [CRAN][cran_mobsim]
 
 ### Other activities
