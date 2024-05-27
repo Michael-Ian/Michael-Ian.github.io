@@ -9,7 +9,7 @@
   <head>
     <head>
   
-  <title>How I created this website | </title>
+  <title>Tech news 8: Sharing code through your own R package | </title>
   <meta charset="utf-8" />
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -208,15 +208,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="How I created this website">
-    <meta itemprop="description" content="This is my first blog article on this website, well first blog article ever I guess. And it’s about the process I followed to build it.I downloaded the minimal mistake repo from github and began working in VSC. Since I built the Restore project website on the same computer a few months ago, I naively thought everything would work from the first try. I actually had a few errors but it was a great satisfaction to followthe recommendations I left for the Restore project members, for myself and for other readers, and every thing was quickly solved and the website was running in less than an hour.">
-    <meta itemprop="datePublished" content="2024-01-10T13:34:30+01:00">
+    <meta itemprop="headline" content="Tech news 8: Sharing code through your own R package">
+    <meta itemprop="description" content="This month, I thought of writing a little bit about sharing code with each other.">
+    <meta itemprop="datePublished" content="2024-02-16T22:37:30+01:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">How I created this website
+          <h1 id="page-title" class="page__title" itemprop="headline">Tech news 8: Sharing code through your own R package
 </h1>
           
 
@@ -226,7 +226,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2024-01-10T13:34:30+01:00">January 10, 2024</time>
+        <time datetime="2024-02-16T22:37:30+01:00">February 16, 2024</time>
       </span>
     
 
@@ -239,7 +239,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          2 minute read
         
       </span>
     
@@ -251,14 +251,65 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>This is my first blog article on this website, well first blog article ever I guess. And it’s about the process I followed to build it.<br />
-I downloaded the minimal mistake repo from github and began working in VSC. Since I built the Restore project website on the same computer a few months ago, I naively thought everything would work from the first try. I actually had a few errors but it was a great satisfaction to follow
-the recommendations I left for the Restore project members, for myself and for other readers, and every thing was quickly solved and the website was running in less than an hour.</p>
+        <p>This month, I thought of writing a little bit about sharing code with each other.</p>
 
-<p>Beginning summer 2023, I built the <a href="https://www.globalrestoreproject.com/">Restore project website</a> and documented the process in a [step by step Markdown][guide_link] hosted in the <a href="https://github.com/global-restore-project/grp_website">Github repository.</a> In the following September, I shared with my team and interested members of iDiv a more general guide on website building, the easy way using <a href="https://pages.github.com/">Github Pages.</a> This newsletter is available as a blog post <a href="/blog/tech-news-3/">here on this website.</a></p>
+<h3 id="collaborating-on-code">Collaborating on code</h3>
 
-<p>Changing the domain name of the Restore website from Github Pages to a dedicated domain name was another adventure…</p>
+<p>Let’s imagine having a workshop with a group of colleagues and over the course of the week, some will develop tools and some will use said tools for various analyses. The workflow will most likely be:</p>
 
+<ol>
+  <li>let’s define our needs, some functions, the data they take in input and what we all need out</li>
+  <li>some begin writing functions, each their own maybe and then share with everyone,</li>
+  <li>the code is emailed around, saved on a USB key or shared on DropBox</li>
+  <li>a. users test the functions, find bugs, need improvements, need more details on input format, give feedback</li>
+  <li>b. In the meantime, programers fixed some things, fixed functions, created others and back to 2.</li>
+</ol>
+
+<p>It’s hard keeping track of the versions and consistently and easily distributing updates to users. It’s hard distributing documentation, testing functions reproducibly and controlling the dependencies.
+And if you’re teaching and want to distribute code and data all in one?</p>
+
+<h3 id="make-your-life-easier-make-a-package">Make your life easier, make a package</h3>
+
+<p>If the functions were written in a package, documentation and tests can easily be written and processed thanks to rstudio built-in tools. The users can install the package, from the shared dropbox or from github/gitlab almost as usual, and load it with <code class="language-plaintext highlighter-rouge">library(yourPackage)</code> as usual. They can access the help documentation you wrote with “?” as they are used to, read examples, enjoy auto-completion of the arguments, etc.
+When they give you feedback, the version is clear and the code changes can be tested in seconds with a shortcut.</p>
+
+<p>You can also share data inside the package, and again, the version will be a timestamp and get you a reproducibility badge. It’s also going to be very easy to access for the users:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">yourPackage</span><span class="p">)</span><span class="w">
+</span><span class="n">dataName</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="how-to-make-a-package">How to make a package?</h3>
+
+<p>There are so many great (better) resources online! But let me just give a couple of tips:</p>
+
+<p>The absolute minimum that makes an R package an R package is one DESCRIPTION file and one R script, that’s it!</p>
+
+<p>Begin small, discover the thrill, clarity and comfort of writing documentation and tests for your functions. This will give you ways of imagining edge cases, eg thinking of the missing values, and controlling. Make a change, Ctrl+Shift+T(est), make another change, Ctrl+Shift+T, etc!</p>
+
+<blockquote>
+  <p>Make a change, Ctrl+Shift+T(est), make another change, Ctrl+Shift+T, etc!</p>
+</blockquote>
+
+<p>Take advantage of tools you already have on your computer: RStudio, the devtools, <code class="language-plaintext highlighter-rouge">testthat</code> packages for example.</p>
+
+<p>For whatever questions you might have while building, documenting or testing, the first DuckDuckGo result will very likely comes from Wickham’s book (<a href="https://r-pkgs.org/">https://r-pkgs.org/</a>), it’s just so complete…</p>
+
+<p>Wanna do it differently? Build the tests first to build up the framework of exactly how you want your function to behave, then write the function.</p>
+
+<h3 id="some-useful-tools">Some useful tools</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">devtools::document()</code> will build the documentation, help pages, vignettes everything</li>
+  <li><code class="language-plaintext highlighter-rouge">devtools::install()</code>, <code class="language-plaintext highlighter-rouge">devtools::install(“/mydropbox/myPackage”)</code> or <code class="language-plaintext highlighter-rouge">devtools::install_github(“yourRepo/yourPackage”)</code> will install the package from source from wherever is the code.</li>
+  <li><code class="language-plaintext highlighter-rouge">testthat::test_package()</code> will run all of your tests and give you encouraging words when they fail, how thoughtful!</li>
+</ul>
+
+<p>I hope this decreased the barrier of trying out building a package. I hope however that it is not decreasing the impressiveness of it!</p>
+
+<p>Best wishes,</p>
+
+<p>Alban</p>
 
         
       </section>
@@ -277,7 +328,11 @@ the recommendations I left for the Restore project members, for myself and for o
     
       <a href="/tags/#experience" class="page__taxonomy-item" rel="tag">experience</a><span class="sep">, </span>
     
-      <a href="/tags/#webdev" class="page__taxonomy-item" rel="tag">webdev</a>
+      <a href="/tags/#package" class="page__taxonomy-item" rel="tag">package</a><span class="sep">, </span>
+    
+      <a href="/tags/#r" class="page__taxonomy-item" rel="tag">R</a><span class="sep">, </span>
+    
+      <a href="/tags/#technews" class="page__taxonomy-item" rel="tag">technews</a>
     
     </span>
   </p>
@@ -302,7 +357,7 @@ the recommendations I left for the Restore project members, for myself and for o
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-01-10T13:34:30+01:00">January 10, 2024</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-02-16T22:37:30+01:00">February 16, 2024</time></p>
 
 
       </footer>
@@ -312,11 +367,11 @@ the recommendations I left for the Restore project members, for myself and for o
       
   <nav class="pagination">
     
-      <a href="/blog/tech-news-6/" class="pagination--pager" title="Tech news 6: Creating animated figures
+      <a href="/blog/tech-news-7/" class="pagination--pager" title="Tech news 7: Creating animated figures
 ">Previous</a>
     
     
-      <a href="/blog/discovery-analog-photography/" class="pagination--pager" title="My discovery of analog photography
+      <a href="/blog/saving-shot-metadata/" class="pagination--pager" title="Saving the camera settings of a shot in the exif data of the scans
 ">Next</a>
     
   </nav>
@@ -366,16 +421,14 @@ the recommendations I left for the Restore project members, for myself and for o
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          3 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
-  Filling in PDF forms and sending personalised emails
-
+    <p class="archive__item-excerpt" itemprop="description">Facilitating… admin tasks
 
 </p>
   </article>
@@ -423,7 +476,7 @@ the recommendations I left for the Restore project members, for myself and for o
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">What for?
+    <p class="archive__item-excerpt" itemprop="description">Pipes
 
 </p>
   </article>
@@ -471,7 +524,7 @@ the recommendations I left for the Restore project members, for myself and for o
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Why testing data?
+    <p class="archive__item-excerpt" itemprop="description">Testing data
 
 </p>
   </article>
@@ -574,7 +627,7 @@ notebook to learn and train their eye, to organise their sh...</p>
         
       
         
-          <li><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Sagouis%2C%20Alban%22&l=list&p=1&s=10&sort=bestmatch" rel="nofollow noopener noreferrer"><i class="ai ai-fw ai-zenodo" aria-hidden="true"></i> Zenodo</a></li>
+          <li><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Sagouis%2C%20Alban%22&l=list&p=1&s=10&sort=bestmatch" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Zenodo</a></li>
         
       
         

@@ -9,7 +9,7 @@
   <head>
     <head>
   
-  <title>Tech news 2: Publishing code | </title>
+  <title>Saving the camera settings of a shot in the exif data of the scans | </title>
   <meta charset="utf-8" />
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -208,15 +208,15 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Tech news 2: Publishing code">
-    <meta itemprop="description" content="  Disclaimer: this blog post is my opinion, at the time of writing, and might not reflect the opinion of my employer, or mine today.">
-    <meta itemprop="datePublished" content="2023-08-18T22:59:30+02:00">
+    <meta itemprop="headline" content="Saving the camera settings of a shot in the exif data of the scans">
+    <meta itemprop="description" content="For decades (centuries?) photographers have been writing their camera settings for each shot on anotebook to learn and train their eye, to organise their shots or because they are data-freaks.Today, you could still make notes by hand or use a dedicated smartphone app or you could be theproud owner of a more modern film camera that saves the shot data on a memory card.">
+    <meta itemprop="datePublished" content="2024-02-26T01:15:30+01:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Tech news 2: Publishing code
+          <h1 id="page-title" class="page__title" itemprop="headline">Saving the camera settings of a shot in the exif data of the scans
 </h1>
           
 
@@ -226,7 +226,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-08-18T22:59:30+02:00">August 18, 2023</time>
+        <time datetime="2024-02-26T01:15:30+01:00">February 26, 2024</time>
       </span>
     
 
@@ -239,7 +239,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          4 minute read
         
       </span>
     
@@ -251,48 +251,159 @@
 
       <section class="page__content" itemprop="text">
         
-        <blockquote>
-  <p>Disclaimer: this blog post is my opinion, at the time of writing, and might not reflect the opinion of my employer, or mine today.</p>
+        <p>For decades (centuries?) photographers have been writing their camera settings for each shot on a
+notebook to learn and train their eye, to organise their shots or because they are data-freaks.
+Today, you could still make notes by hand or use a dedicated smartphone app or you could be the
+proud owner of a more modern film camera that saves the shot data on a memory card.</p>
+
+<p>Once the film developed, by yourself or a lab, and scanned, by yourself or a lab, the scans you get
+do not have the information of the original shots. These data are on paper, on a smartphone or on a memory card.
+I downloaded the <code class="language-plaintext highlighter-rouge">Analog</code> app for my smartphone, because it is free, does not collect user data,
+it’s lightweight and I loved the design, and I began saving the settings for each shot. Data was accumulating
+but I was not seeing how to get it out yet.</p>
+
+<p>A digital camera would take the picture and save the settings inside the <code class="language-plaintext highlighter-rouge">jpg</code> or <code class="language-plaintext highlighter-rouge">tiff</code> files
+in exif data. I want the same thing for my scans!</p>
+
+<p>And how to get these data in the exif fields of the scans? Well surprisingly, it’s not as straightforward as
+you (I) would expect. At first I did not find anything satisfying and discussing with the developers behind
+<code class="language-plaintext highlighter-rouge">Analog</code> made it clear that it was not a straightforward task for them either. We talked about workflow.</p>
+
+<p>The team were encouraging amateur and professional photographers to rename their
+files, well their scans, following this convention to save the settings of
+each shot. Then they developed <code class="language-plaintext highlighter-rouge">Analog</code> which of course allows users to save Shutter speed,
+Aperture, the lens’ focal length and exposure correction. At the end of the
+roll, the data is extracted and the user receives a list of name files by email:</p>
+
+<blockquote>
+  <p>Test roll_NO01_SS50_A2.8_FL50_EX0
+Test roll_NO02_SS50_A2.8_FL50_EX0
+Test roll_NO03_SS125_A4_FL50_EX0
+Test roll_NO04_SS125_A4_FL50_EX0</p>
 </blockquote>
 
-<p>I would like to talk a little bit about sharing and archiving code. And data, and figures. People want to see it when you publish and your future self does not want to look for the final version in a cascade of folders.
-And a tip for double-blind submission at the end!</p>
+<p>They hand-rename the scans or use a renaming software. OK.
+but this does not go <em>inside</em> the files, a file name is not an ideal way
+of storing data even when using the standardised convention they created:
+NOSSAFLEX</p>
 
-<h3 id="publishing-code">Publishing code</h3>
+<blockquote>
+  <p>It’s as easy as the name – NOSSAFLEX has all of the information in the
+title.</p>
 
-<p>To begin, let’s focus on the primary platform: GitHub. While the tendency may be to upload code only upon publication, consider the advantages of maintaining a GitHub repository from the project’s inception. Not only does this foster collaboration, but it also provides a comprehensive history, promoting transparency and enabling retrospective analysis of decisions made.</p>
+  <p>NO = Number<br />
+SS = Shutter Speed<br />
+A = Aperture<br />
+FL = Focal Length<br />
+EX = Exposure</p>
+</blockquote>
 
-<h3 id="archiving-code">Archiving code</h3>
+<p>I could not find a way to automatically save the data on my phone to the exif slots of my scans…</p>
 
-<p>For a seamless archiving process, I recommend establishing a connection between GitHub and Zenodo. This integration automatically archives new versions of your repository whenever necessary. Particularly valuable for evolving data sets used across multiple publications, this approach streamlines the documentation process. Comprehensive instructions on setting up this connection can be found <a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content#repository">here</a></p>
+<p>So I decided to create an R package to do it! An exciting weekend project and certainly
+an article for the blog!</p>
 
-<p>To elaborate briefly, the steps involve:</p>
+<p>Since I was already using the <code class="language-plaintext highlighter-rouge">Analog</code> app, I had to follow its data structure.</p>
 
-<ol>
-  <li>Granting Zenodo access to your GitHub repositories within your Zenodo account.</li>
-  <li>Creating a release on GitHub, e.g., “Version 1 - Metacommunity Surveys - Nature Article by Wubing Xu.”</li>
-  <li>Zenodo will automatically archive the repository at the time of the release and assign a DOI for proper citation.
-A noteworthy bonus is the CITATION.cff file, ensuring accurate attribution to all contributors. Further information can be found in <a href="https://citation-file-format.github.io/">Github documentation</a> and here is an <a href="https://github.com/chase-lab/metacommunity_surveys">example</a>.</li>
-</ol>
+<h3 id="here-is-the-readme-of-my-package">Here is the README of my package</h3>
 
-<p>Should you opt for a more straightforward approach, consider utilizing Zenodo directly. This method entails uploading content and obtaining a DOI, allowing for future updates and simplified acknowledgment of collaborators.</p>
+<p>This package relies on a file naming convention for, essentially analog,
+photography. Photographs taken on film, then developed, then scanned are lacking
+important metadata or if they have, it’s from the scanning device, not the
+original camera.
+The nossaflex package takes NOSSAFLEX structured file names
+and can 1) batch rename corresponding pictures and 2) edit their exif data
+to add information such as focal length, shutter speed, aperture.
+This allow a photographer to take notes on the <code class="language-plaintext highlighter-rouge">Analog</code> app while shooting
+pictures, export nossaflex compatible file names and use R to rename scans
+and edit their exif metadata with corresponding shot information.</p>
 
-<p>While I’ve focused on Zenodo, please note that Figshare offers similar functionality and may be an alternative to explore.</p>
+<p>The nossaflex package is the entry of the NOSSAFLEX file naming
+convention into the R universe to help scientific, professional or
+amateur photographers to name their picture files consistently and
+informatively.</p>
 
-<h3 id="double-blind-review">Double blind review</h3>
+<p>When taking a picture with an analog camera, data such as aperture,
+shutter speed or focal length are not automatically saved the way they
+are in a digital camera. Many photographers write down these precious
+metadata in a notebook, we want to help them improve their workflow and
+data quality.</p>
 
-<p>When submitting a paper, if the editor asks you anonymised code, you can use <a href="https://anonymous.4open.science/">Anonymous GitHub</a>. This tool anonymizes your GitHub repository by replacing any identifying information, enabling you to share code anonymously with editors and reviewers during the submission process.</p>
+<h4 id="what-is-nossaflex">What is NOSSAFLEX?</h4>
 
-<p><a href="https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content#repository">https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content#repository</a></p>
+<p>Here is an explanation from the creators:</p>
 
-<h3 id="conclusion">Conclusion</h3>
+<blockquote>
+  <p>It’s as easy as the name – NOSSAFLEX has all of the information in the
+title.</p>
 
-<p>Efficient code sharing and archiving not only enhance collaboration but also ensure the integrity of our research efforts. By implementing these practices, we collectively contribute to the advancement of our field. Thank you for your attention, and let’s continue to empower each other through shared knowledge.</p>
+  <p>NO = Number<br />
+SS = Shutter Speed<br />
+A = Aperture<br />
+FL = Focal Length<br />
+EX = Exposure</p>
+</blockquote>
 
-<p>Best wishes,</p>
+<p>NOSSAFLEX file names looks like this: <code class="language-plaintext highlighter-rouge">NO03_SS250_A8_FL80_EX0.jpg</code> or
+this: <code class="language-plaintext highlighter-rouge">NO34_SS30_A2.8_FL35_EX+1.tiff</code>!</p>
 
-<p>Alban</p>
+<p>Learn more on their [website]{<a href="https://nossaflex.io/the-system">https://nossaflex.io/the-system</a>} or on
+their [Youtube channel]{<a href="https://www.youtube.com/@NOSSAFLEX">https://www.youtube.com/@NOSSAFLEX</a>}.</p>
 
+<h4 id="the-package">The package</h4>
+
+<p>Here are the two main functions in the package:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">renaming_nossaflex</code> batch-renames picture files from uninformative
+<code class="language-plaintext highlighter-rouge">DSC_00345.jpg</code> to information-rich NOSSAFLEX name based on data
+provided by the user, see {analog} section:
+<code class="language-plaintext highlighter-rouge">NO03_SS250_A8_FL80_EX0.jpg</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">editing_exif</code> batch-saves the metadata of the pictures into the exif
+slots of the scan files (jpg, tiff, etc).</li>
+</ul>
+
+<h4 id="analog-or-an-other-app">Analog or an other app</h4>
+
+<h4 id="the-workflow">The workflow</h4>
+
+<h4 id="installation">Installation</h4>
+
+<p>You can install the development version of nossaflex from
+<a href="https://github.com/">GitHub</a> with:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># install.packages("devtools")</span><span class="w">
+</span><span class="c1"># devtools::install_github("AlbanSagouis/nossaflex")</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="example">Example</h4>
+
+<p>This is a basic example which shows you how to solve a common problem:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">nossaflex</span><span class="p">)</span><span class="w">
+</span><span class="n">files</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Pictures/2024/01 02 Winter in Berlin/DSC_001034"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"Pictures/2024/01 02 Winter in Berlin/DSC_001035"</span><span class="p">,</span><span class="w">
+           </span><span class="s2">"Pictures/2024/01 02 Winter in Berlin/DSC_001036"</span><span class="p">)</span><span class="w">
+</span><span class="n">filenames</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">reading_nossaflex</span><span class="p">(</span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"path_to_the_filenames.txt"</span><span class="p">)</span><span class="w"> </span><span class="c1"># provided by the `analog` app</span><span class="w">
+</span><span class="n">renaming_nossaflex</span><span class="p">(</span><span class="n">filenames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">filenames</span><span class="p">,</span><span class="w"> </span><span class="n">files</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">files</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Additionally you may want to safely save the shots metadata inside the
+scans:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">metadata</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">reading_nossaflex</span><span class="p">(</span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"path_to_the_filenames.txt"</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w">  </span><span class="c1"># provided by the `analog` app</span><span class="w">
+     </span><span class="n">parsing_nossaflex</span><span class="p">()</span><span class="w">
+</span><span class="n">editing_exif</span><span class="p">(</span><span class="n">files</span><span class="p">,</span><span class="w"> </span><span class="n">metadata</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="related-work">Related work</h4>
+
+<p>The package relies heavily on the great
+<code class="language-plaintext highlighter-rouge">exiftoolr</code>{<a href="https://github.com/JoshOBrien/exiftoolr/">https://github.com/JoshOBrien/exiftoolr/</a>} package by
+@JoshOBrien which itself depends on the great
+<code class="language-plaintext highlighter-rouge">exiftool</code>{<a href="https://exiftool.org/">https://exiftool.org/</a>} software by Phil Harvey.<br />
+Finally, jExifToolGUI{<a href="https://github.com/hvdwolf/jExifToolGUI">https://github.com/hvdwolf/jExifToolGUI</a>} also
+offers exif editing and with a Graphical Interface, nice.</p>
 
         
       </section>
@@ -313,11 +424,11 @@ A noteworthy bonus is the CITATION.cff file, ensuring accurate attribution to al
     
       <a href="/tags/#package" class="page__taxonomy-item" rel="tag">package</a><span class="sep">, </span>
     
+      <a href="/tags/#photography" class="page__taxonomy-item" rel="tag">photography</a><span class="sep">, </span>
+    
       <a href="/tags/#r" class="page__taxonomy-item" rel="tag">R</a><span class="sep">, </span>
     
-      <a href="/tags/#reproducibility" class="page__taxonomy-item" rel="tag">reproducibility</a><span class="sep">, </span>
-    
-      <a href="/tags/#technews" class="page__taxonomy-item" rel="tag">technews</a>
+      <a href="/tags/#weekend-project" class="page__taxonomy-item" rel="tag">weekend-project</a>
     
     </span>
   </p>
@@ -342,7 +453,7 @@ A noteworthy bonus is the CITATION.cff file, ensuring accurate attribution to al
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-08-18T22:59:30+02:00">August 18, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-02-26T01:15:30+01:00">February 26, 2024</time></p>
 
 
       </footer>
@@ -352,11 +463,11 @@ A noteworthy bonus is the CITATION.cff file, ensuring accurate attribution to al
       
   <nav class="pagination">
     
-      <a href="/blog/tech-news-1/" class="pagination--pager" title="Tech news 1: Spatial packages
+      <a href="/blog/tech-news-8/" class="pagination--pager" title="Tech news 8: Sharing code through your own R package
 ">Previous</a>
     
     
-      <a href="/blog/tech-news-3/" class="pagination--pager" title="Tech news 3: Building a free website easy
+      <a href="/blog/tech-news-9/" class="pagination--pager" title="Tech news 9: Testing data
 ">Next</a>
     
   </nav>
@@ -406,16 +517,14 @@ A noteworthy bonus is the CITATION.cff file, ensuring accurate attribution to al
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          3 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
-  Filling in PDF forms and sending personalised emails
-
+    <p class="archive__item-excerpt" itemprop="description">Facilitating… admin tasks
 
 </p>
   </article>
@@ -463,7 +572,7 @@ A noteworthy bonus is the CITATION.cff file, ensuring accurate attribution to al
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">What for?
+    <p class="archive__item-excerpt" itemprop="description">Pipes
 
 </p>
   </article>
@@ -511,7 +620,7 @@ A noteworthy bonus is the CITATION.cff file, ensuring accurate attribution to al
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Why testing data?
+    <p class="archive__item-excerpt" itemprop="description">Testing data
 
 </p>
   </article>
@@ -527,7 +636,7 @@ A noteworthy bonus is the CITATION.cff file, ensuring accurate attribution to al
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/saving-shot-metadata/" rel="permalink">Saving the camera settings of a shot in the exif data of the scans
+        <a href="/blog/tech-news-8/" rel="permalink">Tech news 8: Sharing code through your own R package
 </a>
       
     </h2>
@@ -539,7 +648,7 @@ A noteworthy bonus is the CITATION.cff file, ensuring accurate attribution to al
       <span class="page__meta-date">
         <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2024-02-26T01:15:30+01:00">February 26, 2024</time>
+        <time datetime="2024-02-16T22:37:30+01:00">February 16, 2024</time>
       </span>
     
 
@@ -552,15 +661,16 @@ A noteworthy bonus is the CITATION.cff file, ensuring accurate attribution to al
       <span class="page__meta-readtime">
         <i class="far fa-fw fa-clock" aria-hidden="true"></i>
         
-          4 minute read
+          2 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">For decades (centuries?) photographers have been writing their camera settings for each shot on a
-notebook to learn and train their eye, to organise their sh...</p>
+    <p class="archive__item-excerpt" itemprop="description">This month, I thought of writing a little bit about sharing code with each other.
+
+</p>
   </article>
 </div>
 
@@ -614,7 +724,7 @@ notebook to learn and train their eye, to organise their sh...</p>
         
       
         
-          <li><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Sagouis%2C%20Alban%22&l=list&p=1&s=10&sort=bestmatch" rel="nofollow noopener noreferrer"><i class="ai ai-fw ai-zenodo" aria-hidden="true"></i> Zenodo</a></li>
+          <li><a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Sagouis%2C%20Alban%22&l=list&p=1&s=10&sort=bestmatch" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Zenodo</a></li>
         
       
         
