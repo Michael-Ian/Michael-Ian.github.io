@@ -30,7 +30,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Tech news 6: Creating animated figures",
-        "excerpt":"This week, some fun with animated figures. We send each other gifs but they rarely come to mind when it comes to showing scientific processes or results. They are actually pretty easy to make in R! Here are a few examples using [gganimate][gganimate]. There are other packages out there but...","categories": ["blog"],
+        "excerpt":"This week, some fun with animated figures. We send each other gifs but they rarely come to mind when it comes to showing scientific processes or results. They are actually pretty easy to make in R! Here are a few examples using gganimate. There are other packages out there but...","categories": ["blog"],
         "tags": ["experience","R","package","technews","visualisation"],
         "url": "/blog/tech-news-6/",
         "teaser": null
@@ -51,5 +51,35 @@ var store = [{
         "excerpt":"This week’s email is about tidymodels. The tidymodels framework is a collection of packages for modeling and machine learning using tidyverse principles. Tidymodels offers a consistent and flexible framework for your data science and data programming needs. This tool suite is designed to streamline and simplify the process of building...","categories": ["blog"],
         "tags": ["experience","R","package","technews"],
         "url": "/blog/tech-news-7/",
+        "teaser": null
+      },{
+        "title": "Tech news 8: Sharing code through your own R package",
+        "excerpt":"This month, I thought of writing a little bit about sharing code with each other. Collaborating on code Let’s imagine having a workshop with a group of colleagues and over the course of the week, some will develop tools and some will use said tools for various analyses. The workflow...","categories": ["blog"],
+        "tags": ["experience","R","package","technews"],
+        "url": "/blog/tech-news-8/",
+        "teaser": null
+      },{
+        "title": "Saving the camera settings of a shot in the exif data of the scans",
+        "excerpt":"For decades (centuries?) photographers have been writing their camera settings for each shot on a notebook to learn and train their eye, to organise their shots or because they are data-freaks. Today, you could still make notes by hand or use a dedicated smartphone app or you could be the...","categories": ["blog"],
+        "tags": ["photography","weekend-project","experience","R","package"],
+        "url": "/blog/saving-shot-metadata/",
+        "teaser": null
+      },{
+        "title": "Tech news 9: Testing data",
+        "excerpt":"Why testing data? Looking inside the data you receive and produce is an absolute necessity but if you could have a second pair of eyes able to scan millions of rows in fractions of seconds and as often as needed, why not? Plus buildings your tests, ie data checks needs...","categories": ["blog"],
+        "tags": ["experience","R","package","technews"],
+        "url": "/blog/tech-news-9/",
+        "teaser": null
+      },{
+        "title": "Tech news 10: Pipes",
+        "excerpt":"What for? Pipes are present is many languages and they allow passing objects from one function to another without having to create an intermediary object and keeping a logical and readable flow. In the command line, you can read all files names in a folder, pass them to grep to...","categories": ["blog"],
+        "tags": ["experience","R","package","technews"],
+        "url": "/blog/tech-news-10/",
+        "teaser": null
+      },{
+        "title": "Tech news 11: Facilitating… admin tasks",
+        "excerpt":"Filling in PDF forms and sending personalised emails What for? Maybe you want to pre-fill travel requests for all members of your group? Maybe you want to send a personalised email to all of your 200 co-authors, data providers, citizen science participants or parliament representatives? Maybe you want to send...","categories": ["blog"],
+        "tags": ["experience","R","package","technews"],
+        "url": "/blog/tech-news-11/",
         "teaser": null
       }]
