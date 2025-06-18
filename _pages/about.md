@@ -1,3 +1,4 @@
+
 ---
 layout: single
 title: "About Me"
@@ -8,48 +9,31 @@ show_date: false
 classes: wide
 ---
 
-## 👋 Hello!
+# About Me
 
-I’m Michael — a Canadian marketing graduate fluent in English and conversational Mandarin.  
-I’ve lived in Canada for over 20 years and spent over a year in China exploring cross-cultural business opportunities.
+I’m Michael — a marketing graduate with a strong interest in strategy, content, and cross-cultural communication. Raised in Canada and having lived in China, I bring a bilingual perspective to everything I do. My focus is helping ideas travel clearly between audiences, platforms, and markets.
 
----
+## Background
 
-### 💼 What I Do
+I hold an Honours Bachelor of Commerce and a Bachelor of Marketing from Toronto. Over the past few years, I’ve worked on a variety of projects involving social media strategy, user research, B2B marketing, and content development for both Western and Chinese audiences.
 
-- 📱 Build content strategies across Western + Chinese platforms (Xiaohongshu, Instagram, LinkedIn)  
-- 🧠 Design mock brand campaigns (see my [Fake Company Project](/projects))  
-- 🛠 Use tools like Canva, CapCut, Meta Ads, and data analytics
+My work is always shaped by a balance of creative thinking and practical execution. Whether it’s building campaigns, doing primary market research, or crafting messaging, I enjoy the challenge of finding the right message for the right moment.
 
----
+## Skills & Strengths
 
-### 🎓 Education
+- Cross-cultural marketing strategy (Canada/China)
+- Social media content planning and branding
+- Market research and customer discovery
+- Copywriting and bilingual communication
+- Tools: Canva, CapCut, Excel, Google Suite, Meta Ads, LinkedIn
 
-- Honours Bachelor of Marketing — 2025, Toronto 
-- Bachelor of Commerce — 2023, Toronto
+## Languages
 
----
+- English — Native
+- Mandarin — Fluent (spoken), Intermediate (written)
 
-### 🌐 Languages
+## Why This Site?
 
-- Native English speaker  
-- Fluent Mandarin (spoken)
+This portfolio is a place to showcase my work — from formal client research projects to personal experiments in branding and social media. You can also find my resume, credentials, and ways to connect.
 
----
-
-## 你好！
-
-我是 Michael，在加拿大生活了二十多年，也曾在中国生活学习一年多，熟悉中西文化差异，热爱市场营销与创意内容制作。
-
----
-
-### 我会的事情
-
-- 社交媒体内容策划（小红书、Instagram 等）  
-- 品牌包装与视觉呈现（用 Canva 和 CapCut 设计）  
-- 中英文双语沟通与本地化内容
-
----
-
-💌 Feel free to [contact me](/contact)
-
+If you want to collaborate, ask a question, or just chat — feel free to reach out.
