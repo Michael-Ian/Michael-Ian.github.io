@@ -63,7 +63,7 @@ plugins:
 
 author:
   name   : "Michael Ian"
-  avatar : ""  # Add your own avatar image if you want (upload to /assets/images/)
+  avatar: "/assets/images/profile.jpg"
   bio    : "Marketing | Bilingual Creator | Social Media Projects"
   links:
     - label: "Portfolio"
