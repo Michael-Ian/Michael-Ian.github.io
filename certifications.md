@@ -7,9 +7,6 @@ read_time: false
 show_date: false
 classes: wide
 ---
-
-# Certifications
-
 This is a summary of my professional certifications in marketing, strategy, and digital tools. These credentials reflect my continued learning and ability to work across platforms in a results-driven way.
 
 ---
