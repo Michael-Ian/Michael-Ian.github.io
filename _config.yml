@@ -62,34 +62,19 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Michael Ian"
+  avatar : ""  # Add your own avatar image if you want (upload to /assets/images/)
+  bio    : "Marketing | Bilingual Creator | Social Media Projects"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "Portfolio"
+      icon: "fas fa-link"
+      url: "https://michael-ian.github.io"
+    - label: "Xiaohongshu"
+      icon: "fab fa-redhat"
+      url: "https://www.xiaohongshu.com/user/yourid"
+    - label: "WeChat"
+      icon: "fas fa-qrcode"
+      url: "/assets/images/wechat-qr.png"  # upload your QR image
 
 defaults:
   # _posts
