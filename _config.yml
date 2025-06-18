@@ -62,19 +62,16 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Michael Ian"
+  name: "Michael Ian"
   avatar: "/assets/images/profile.jpg"
-  bio    : "Marketing | Bilingual Creator | Social Media Projects"
+  bio: "Bilingual marketing, digital strategy, and creative ideas."
   links:
     - label: "Portfolio"
-      icon: "fas fa-link"
+      icon: "fas fa-globe"
       url: "https://michael-ian.github.io"
-    - label: "Xiaohongshu"
-      icon: "fab fa-redhat"
-      url: "https://www.xiaohongshu.com/user/yourid"
     - label: "WeChat"
       icon: "fas fa-qrcode"
-      url: "/assets/images/wechat-qr.png"  # upload your QR image
+      url: "/assets/images/wechat-qr.png"
 
 defaults:
   # _posts
