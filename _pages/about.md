@@ -15,8 +15,8 @@ I’ve lived in Canada for over 20 years and spent over a year in China explorin
 - Use tools like Canva, CapCut, Meta Ads, and data analytics
 
 ### 📚 Education:
-- Honours Bachelor of Commerce – 2025
-- Bachelor of Marketing – 2023, Toronto
+- Honours Bachelor of Marketing – 2025
+- Bachelor of Commerce – 2023, Toronto
 
 ### 🌏 Languages:
 - Native English speaker
