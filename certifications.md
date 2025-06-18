@@ -29,12 +29,6 @@ This is a summary of my professional certifications in marketing, strategy, and 
 
 ---
 
-## LinkedIn Learning — Social Media Marketing Foundations  
-**Issued by**: LinkedIn  
-**Overview**: Provides essential skills for social strategy, platform differences (Instagram, Twitter, TikTok, etc.), campaign planning, and engagement metrics.
-
----
-
 ## Coursera — Foundations of Marketing Analytics  
 **Issued by**: University of Virginia / Coursera  
 **Overview**: Covers data collection, marketing attribution, A/B testing, and making data-informed decisions in a marketing context.
