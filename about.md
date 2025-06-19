@@ -32,27 +32,3 @@ My work is always shaped by a balance of creative thinking and practical executi
 ## Why This Site?
 
 This portfolio is a place to showcase my work from formal client research projects to personal experiments in branding and social media. You can also find my resume, credentials, and ways to connect.
-
-# 关于我
-
-你好，我是Michael，一名市场营销专业毕业生，成长于加拿大，也曾在中国生活学习。  
-我了解中西方文化的差异，擅长用双语帮助品牌跨越语言与文化的障碍，让信息更自然、更准确地传达给目标受众。
-
-## 我的背景
-
-我在多伦多完成了市场营销和商业荣誉学士学位。过去几年里，我参与了多个涉及社交媒体策略、用户研究、B2B市场调研和中英双语内容创作的项目，客户群体覆盖海内外。
-
-我相信创意和执行力是营销的核心，喜欢在品牌建设、内容规划和策略制定中寻找平衡点，让想法真正落地。
-
-## 擅长领域
-
-- 中西方跨文化营销策略  
-- 社交媒体内容策划与品牌定位  
-- 市场调研与用户洞察  
-- 中英文文案撰写与沟通  
-- 常用工具：Canva、CapCut、Excel、Google全家桶、Meta广告平台、LinkedIn
-
-## 语言能力
-
-- 英语：母语  
-- 普通话：流利（口语）
