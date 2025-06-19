@@ -74,14 +74,11 @@ author:
       url: "/assets/images/wechat-qr.png"
 
 defaults:
-  # _posts
   - scope:
       path: ""
     values:
-      layout: single
-      sidebar:
-        nav: none
-        show: false
+      show_date: false
+      last_modified_at: null
   # _pages
   - scope:
       path: "_pages"
