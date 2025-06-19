@@ -93,3 +93,10 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+  remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-include-cache
+
+
+
