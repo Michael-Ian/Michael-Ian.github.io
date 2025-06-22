@@ -41,5 +41,3 @@ This is a summary of my professional certifications in marketing, strategy, and 
 - Meta Ads Manager Bootcamp (hands-on ad creation, budget management)
 
 ---
-
-**Note**: Certificates available upon request or via portfolio link.
