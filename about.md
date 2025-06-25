@@ -29,6 +29,3 @@ My work is always shaped by a balance of creative thinking and practical executi
 - English — Native
 - Mandarin — Fluent (spoken)
 
-## Why This Site?
-
-This portfolio is a place to showcase my work from formal client research projects to personal experiments in branding and social media. You can also find my resume, credentials, and ways to connect.
