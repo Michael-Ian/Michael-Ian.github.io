@@ -49,7 +49,7 @@ Tools: Excel, Google Docs, LinkedIn, Apollo.io
 
 ---
 
-# SAYU — Real English Practice Through Conversation
+# GreenTea — Real English Practice Through Conversation
 
 **Type**: Independent Startup Project  
 **Timeline**: 2025 – Present  
@@ -63,7 +63,7 @@ This project focuses on helping users improve real-life English speaking confide
 
 ## Concept
 
-Unlike standard tutoring, SAYU positions itself as a “language gym” — where users don’t learn more English, they **use** the English they already know. The core message: **“Practice > Theory.”**
+Unlike standard tutoring, GreenTea positions itself as a “language gym” — where users don’t learn more English, they **use** the English they already know. The core message: **“Practice > Theory.”**
 
 Content emphasizes:
 - Real conversational practice
