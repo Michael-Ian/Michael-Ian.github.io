@@ -57,7 +57,7 @@ Tools: Excel, Google Docs, LinkedIn, Apollo.io
 
 ## Overview
 
-SAYU is a cross-cultural English practice service designed to help non-native speakers become fluent through natural conversation — not lessons or textbooks. The brand was developed and tested using the Red Note (小红书) platform to build trust, attract users, and differentiate from traditional tutoring models.
+GreenTea is a cross-cultural English practice service designed to help non-native speakers become fluent through natural conversation not lessons or textbooks. The brand was developed and tested using Social Media Platform such as Instagram (@GreenTea.EN) and Red Note (小红书) to build trust, attract users, and differentiate from traditional tutoring models.
 
 This project focuses on helping users improve real-life English speaking confidence through short-form content, 1-on-1 chat sessions, and brand storytelling across Chinese and Western platforms.
 
