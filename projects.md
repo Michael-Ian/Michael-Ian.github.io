@@ -92,3 +92,31 @@ Content emphasizes:
 Brand Positioning · Social Media Strategy · Content Writing · Platform Growth  
 Tools: Red Note, Canva, CapCut, WeChat, Google Docs
 
+---
+
+# Summer Camp Counselor — Youth Leadership & ESL Support
+
+**Type**: Seasonal Education Role  
+**Timeline**: Summers 2022–2024 (4 months each year)  
+**Role**: Lead Counselor / Language Support
+
+## Overview
+
+For three consecutive summers, I worked as a full-time summer camp counselor supporting youth between the ages of 8–14. My responsibilities included organizing daily activities, managing small groups, and helping international campers practice their English in a relaxed, natural environment.
+
+While not a formal teaching role, this experience greatly shaped my understanding of informal language learning, intercultural communication, and the importance of building trust and confidence — especially for young learners using English as a second language.
+
+## Responsibilities
+
+- Led daily team-building, creative, and outdoor programs for 20–30 children  
+- Mentored international campers using conversational English and cultural sensitivity  
+- Created a welcoming, bilingual environment for new arrivals  
+- Supported new staff and helped train junior counselors in communication and conflict resolution  
+- Adapted to diverse learning styles, energy levels, and language backgrounds
+
+## Skills & Tools
+
+Youth Engagement · Informal Language Coaching · Leadership · Conflict Resolution  
+Tools: Google Workspace, Canva (for activity planning), First Aid Certified
+
+
