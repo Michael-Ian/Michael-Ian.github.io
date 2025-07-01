@@ -36,7 +36,8 @@ This is a summary of my professional certifications in marketing, strategy, and 
 ---
 
 ## Additional Training  
-- Canva Design Essentials (visual branding, layout, and templates)  
+- Canva Design Essentials (visual branding, layout, and templates)
+- Teaching English as a Foreign Language (TESL)
 - CapCut Video Editing (short-form content, captions, motion graphics)  
 - Meta Ads Manager Bootcamp (hands-on ad creation, budget management)
 
