@@ -7,3 +7,5 @@ main:
     url: /certifications/
   - title: "中文"
     url: /cn/
+ - title: "英语教学经验"
+    url: /teaching/
