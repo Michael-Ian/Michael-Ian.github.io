@@ -49,21 +49,21 @@ Tools: Excel, Google Docs, LinkedIn, Apollo.io
 
 ---
 
-# GreenTea — Real English Practice Through Conversation
+# MapleTalk — Real Conversations. Real Confidence
 
 **Type**: Independent Startup Project  
-**Timeline**: 2025 – Present  
-**Role**: Founder / Content Strategist
+**Timeline**: 2024 – Present  
+**Role**: Founder
 
 ## Overview
 
-GreenTea is a cross-cultural English practice service designed to help non-native speakers become fluent through natural conversation not lessons or textbooks. The brand was developed and tested using Social Media Platform such as Instagram (@GreenTea.EN) and Red Note (小红书) to build trust, attract users, and differentiate from traditional tutoring models.
+MapleTalk started as a side project—a cross-cultural English practice service designed to help non-native speakers become fluent through natural conversation, not lessons or textbooks. Over the past year, it has grown into something that now requires my full attention, eventually leading to collaborations with mentors, incubators and angel investors, and securing over $10,000 CAD in initial investments.
 
 This project focuses on helping users improve real-life English speaking confidence through short-form content, 1-on-1 chat sessions, and brand storytelling across Chinese and Western platforms.
 
 ## Concept
 
-Unlike standard tutoring, GreenTea positions itself as a “language gym” — where users don’t learn more English, they **use** the English they already know. The core message: **“Practice > Theory.”**
+Unlike standard tutoring, MapleTalk positions itself as a “language gym” — where users don’t learn more English, they **use** the English they already know. The core message: **“Practice > Theory.”**
 
 Content emphasizes:
 - Real conversational practice
