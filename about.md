@@ -8,7 +8,7 @@ show_date: false
 classes: wide
 ---
 
-I’m Michael a marketing graduate from Toronto, Canada with a strong interest in strategy, content, and cross-cultural communication. Raised in Canada and having lived in China, I bring a bilingual perspective to everything I do. My focus is helping ideas travel clearly between audiences, platforms, and markets.
+Hi, I’m Michael. I graduated in 2025 with an Honours Bachelor’s degree in Commerce, with a minor in Marketing. In recent years, I’ve developed a strong interest in machine learning and coding. This website is both a creative outlet and a professional platform—a place where I can apply what I’ve taught myself, showcase my projects, and share my achievements. Think of it as a digital business card for future employers and collaborators.
 
 ## Background
 
