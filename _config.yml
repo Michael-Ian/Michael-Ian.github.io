@@ -16,13 +16,14 @@
 title: Michael Ian
 email: Michael.Ian01@outlook.com
 description: >-
-Native English Speaker | TESL Certified | BComm Hons (Marketing) Toronto, ON Canada
-Bilingual (English, Mandarin) | Six-Years of Work experience 
+  Native English Speaker | TESL Certified | BComm Hons (Marketing) Toronto, ON Canada
+  Bilingual (English, Mandarin) | Six-Years of Work experience 
 
 twitter_username:
 github_username: michael-ian
 minimal_mistakes_skin: default
-search: false
+search: true
+
 
 github_username: username
 minimal_mistakes_skin: default
