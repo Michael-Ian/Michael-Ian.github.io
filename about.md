@@ -8,7 +8,7 @@ show_date: false
 classes: wide
 ---
 
-Hi, I’m Michael. I graduated in 2025 with an Honours Bachelor’s degree in Commerce, with a minor in Marketing. In recent years, I’ve developed a strong interest in machine learning and coding. This website is both a creative outlet and a professional platform—a place where I can apply what I’ve taught myself, showcase my projects, and share my achievements. Think of it as a digital business card for future employers and collaborators.
+Hi, I’m Michael. I graduated in 2025 with an Honours Bachelor’s degree in Commerce, with a minor in Marketing. In recent years, I’ve developed a strong interest in machine learning and coding. This website is both a creative outlet and a professional platform a place where I can apply what I’ve taught myself, showcase my projects, and share my achievements. Think of it as a digital business card for future employers and collaborators.
 
 ## Background
 
