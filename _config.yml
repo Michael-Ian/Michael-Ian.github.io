@@ -95,4 +95,15 @@ tag_archive:
   type: liquid
   path: /tags/
 
+  # Add this to _config.yml
+defaults:
+  - scope:
+      path: ""
+    values:
+      show_date: false
+      last_modified_at: null
+      custom_css:
+        - "/assets/css/custom-background.css"
+
+
 
