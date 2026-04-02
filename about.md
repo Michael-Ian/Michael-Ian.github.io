@@ -8,21 +8,21 @@ show_date: false
 classes: wide
 ---
 
-Hi, I’m Michael. I graduated in 2025 with an Honours Bachelor’s degree in Commerce, with a minor in Marketing. In recent years, I’ve developed a strong interest in machine learning and coding. This website is both a creative outlet and a professional platform a place where I can apply what I’ve taught myself, showcase my projects, and share my achievements. Think of it as a digital business card for future employers and collaborators.
+Hi, I’m Michael. I graduated in 2025 with an Honours Bachelors of Commerce in Marketing. In recent years, I’ve developed a strong interest in machine learning and coding. This website is both a creative outlet and a professional platform a place where I can apply what I’ve taught myself, showcase my projects, and share my achievements.
 
 ## Background
 
-I hold both an Honours Bachelor of Data Science and an Bachelor of Commerce with a minor in Marketing from Toronto. Over the past few years, I’ve worked on a variety of projects involving social media strategy, user research, B2B marketing, and content development for both Western and Chinese audiences.
+Growing up in Alberta, Canada, I developed a deep interest in the outdoors from Muitday backpacking trips to climbing mountain faces. Much of what I do leads back to nature. I also have a strong passion for physical fitness and became a certified personal trainer at sixteen, becoming one of Calgary's youngest personal trainers by taking night classes and summer courses at the Southern Alberta Institute of Technology (SAIT).
 
-My work is always shaped by a balance of creative thinking and practical execution. Whether it’s building campaigns, doing primary market research, or crafting messaging, I enjoy the challenge of finding the right message for the right moment.
+After graduating high school, I decided to head east to study business in Toronto. I funded my own education by working part-time jobs and exploring opportunities from reselling items online to selling professional training plans and acquiring more than 50 clients over the course of four years. While making money and funding my education was important to me, I also genuinely enjoyed helping others and seeing the physical progress my clients made.
 
-## Skills & Strengths
+## Strengths
 
-- Cross-cultural marketing strategy (Canada/China)
-- Social media content planning and branding
-- Market research and customer discovery
-- Copywriting and bilingual communication
-- Tools: Canva, CapCut, Excel, Google Suite, Meta Ads, LinkedIn
+Initiative & Ambiguity Comfort – I lead before I have all the answers. Getting the ball rolling beats waiting for perfect information. I thrive in fast-moving environments where action drives clarity.
+
+Cross-Cultural Connection – I build genuine rapport across personalities, backgrounds, and cultures. Bilingual in English and Chinese with over two years of lived experience in China and a Canadian upbringing.
+
+Public Speaking – I enjoy presenting to crowds and have represented my startup in board meetings and angel investor pitches, delivering clear, engaging narratives under pressure.
 
 ## Languages
 
